@@ -50,7 +50,8 @@ main .container { /* Dà lo stile alla striscia oro del main */
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    background-position: 50% 50%;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 24px;
@@ -58,7 +59,9 @@ main .container { /* Dà lo stile alla striscia oro del main */
     position: relative;
 }
 
-.background_alpha {
+.background_alpha::before {
+    content: "";
+    display: block;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     position: absolute;
@@ -66,14 +69,15 @@ main .container { /* Dà lo stile alla striscia oro del main */
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .text_hero_container {
     color: white;
     width: 50%;
     position: absolute;
-    bottom: 40px;
-    left: 30px;
+    bottom: 60px;
+    left: 50px;
     z-index: 2;
 }
 
@@ -113,7 +117,6 @@ main .container { /* Dà lo stile alla striscia oro del main */
     height: 200px;
     position: relative;
     margin-bottom: 20px;
-    background-color: rgb(0, 0, 0);
 }
 
 .img_container img {
@@ -121,7 +124,6 @@ main .container { /* Dà lo stile alla striscia oro del main */
     height: 100%;
     border-radius: 10px;
     position: absolute;
-    opacity: 0.8;
 }
 
 .col h3 {
