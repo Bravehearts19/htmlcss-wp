@@ -19,7 +19,7 @@
 }
   
 .container { /* Crea la base del layout di tutti i container centrandoli */
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -78,7 +78,7 @@ main .container { /* Dà lo stile alla striscia oro del main */
 }
 
 .container_blue { /* Dà lo stile al container del riquadro blu */
-    width: 75%;
+    width: 80%;
     margin:0 auto 6px;
 }
 
