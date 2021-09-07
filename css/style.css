@@ -1,0 +1,75 @@
+
+* { /* Serve per resettare le caratteristiche di default del browser */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.clearfix::after { /* Serve per dare un contenuto al div padre di elementi floattanti */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row::after { /* Uguale al clearfix, serve solo semanticamente  */
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.container { /* Crea la base del layout di tutti i container centrandoli */
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .container { /* Dà lo stile alla striscia, ovvero il container, rosa dell'header */
+    background-color: rgba(198, 101, 223, 0.856);
+    height: 80px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+main .container { /* Dà lo stile alla striscia oro del main */
+    background-color: rgba(184, 142, 38, 0.822);
+    height: 250px;
+    margin-bottom: 14px;
+
+}
+
+.container_blue { /* Dà lo stile al container del riquadro blu */
+    width: 80%;
+    margin:0 auto 6px;
+    background-color: blue;
+}
+
+.col { /* Rende gli elementi floattanti e ne imposta l'altezza */
+    float: left;
+    height: 265px;
+} 
+
+.into_blue_container { /* Dà il background azzurro a tutti gli elementi all'interno del riquadro blu */
+    background-color: lightblue;
+}
+
+.container_blue > .into_blue_container { /* Dà l'altezza al nav azzurro del riquadro blu */
+    height: 60px;
+    margin-bottom: 14px;
+}
+
+.container_blue section { /* Dà lo stile alla sezione centrale delle colonne del riquadro blu */
+    width: calc(60% - (2 * 12px));
+    margin: 0 12px 14px;
+}
+
+.container_blue aside { /* Dà lo stile alle colonne laterali all'interno del riquadro blu */
+    width: 20%;
+}
+
+footer .container { /* Dà lo stile alla striscia viola del footer */
+    background-color: blueviolet;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+
